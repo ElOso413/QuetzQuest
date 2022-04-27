@@ -76,6 +76,60 @@ p {
   padding: 20px;
 }
 
+.care-container {
+  background-color: #e0ded8;
+  display: block;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.care-container .layout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.care-container .layout::after {
+  background-color: #c5a48c;
+  top: 0;
+  bottom: 0;
+  right: 15%;
+  left: 15%;
+  position: absolute;
+  content: '';
+}
+
+.care-container .layout .heading {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  z-index: 1;
+  background-color: #f7f5f4;
+  padding: 40px 30px;
+  width: 450px;
+  margin-top: -150px;
+  z-index: 2;
+}
+
+.care-container .layout .heading .title {
+  color: #c5a48c;
+  margin-bottom: 20px;
+}
+
+.care-container .layout .img {
+  z-index: 1;
+  height: 450px;
+  width: 590px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .button {
   color: #f7f5f4;
   display: inline-block;

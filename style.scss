@@ -71,13 +71,49 @@ p {
 }    
 
 .care-container {
-    .heading {
-        .title {
+    background-color: #e0ded8;
+    display:block;
+    padding-left: 60px;
+    padding-right: 60px;
 
+    .layout {
+        display:flex;
+        flex-direction: column-reverse;
+        position: relative;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        &::after {
+            background-color: $color-latte;
+            top: 0;
+            bottom: 0;
+            right: 15%;
+            left: 15%;
+            position: absolute;
+            content: '';
         }
-        
-        .paragraph {
 
+        .heading {
+            align-self: flex-end;
+            z-index: 1;
+            background-color: #f7f5f4;
+            padding: 40px 30px;
+            width: 450px;
+            margin-top: -150px;
+            z-index: 2;
+
+            .title {
+                color: $color-latte;
+                margin-bottom: 20px;
+            }
+            
+        }
+
+        .img {
+            z-index: 1;
+            height: 450px;
+            width: 590px;
+            object-fit: cover;
         }
     }
 }
