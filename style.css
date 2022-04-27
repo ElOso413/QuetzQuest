@@ -76,6 +76,21 @@ p {
   padding: 20px;
 }
 
+.button {
+  color: #f7f5f4;
+  display: inline-block;
+  padding: 15px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.button.primary {
+  background-color: #c5a48c;
+}
+
 .paragraph {
   margin-bottom: 25px;
 }

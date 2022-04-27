@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed:wght@400;700&display=swap');
 
 $color-black: #111111;
+$color-latte: #c5a48c;
 
 h3 {
     font-family: 'Roboto Condensed', sans-serif;
@@ -69,9 +70,32 @@ p {
     }    
 }    
 
+.care-container {
+    .heading {
+        .title {
 
+        }
+        
+        .paragraph {
 
+        }
+    }
+}
 
+.button {
+    color: #f7f5f4;
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    &.primary {
+        background-color: $color-latte;
+    }
+}
 
 .paragraph {
     margin-bottom: 25px;
